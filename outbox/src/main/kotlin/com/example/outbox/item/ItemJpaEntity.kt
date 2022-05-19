@@ -14,12 +14,14 @@ class ItemJpaEntity (
         name = "UUID",
         strategy = "org.hibernate.id.UUIDGenerator",
     )
-    private var id: UUID?,
+    private var id: UUID? = null,
 
     @Enumerated(EnumType.STRING)
     private var type: ItemType,
 
     private var properties: String,
 
-    private var created: LocalDateTime
+    private var created: LocalDateTime,
+
+    private var sent: LocalDateTime? = null
 )

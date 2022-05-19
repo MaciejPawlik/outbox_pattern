@@ -3,6 +3,7 @@ CREATE TABLE IF NOT EXISTS items (
     type         varchar NOT NULL,
     properties   varchar NOT NULL,
     created      timestamp NOT NULL,
+    sent         timestamp,
     CONSTRAINT items_pk PRIMARY KEY (id)
 );
 

@@ -6,5 +6,5 @@ import java.time.LocalDateTime
 @Service
 class ItemService(val itemRepository: ItemRepository) {
 
-    fun addItem(item: ItemDto) = itemRepository.save(ItemJpaEntity(null, item.type, item.properties, LocalDateTime.now()))
+    fun addItem(item: ItemDto) = itemRepository.save(ItemJpaEntity(type = item.type, properties = item.properties, created = LocalDateTime.now()))
 }

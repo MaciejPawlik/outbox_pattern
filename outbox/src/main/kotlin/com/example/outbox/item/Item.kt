@@ -4,7 +4,7 @@ import java.math.BigDecimal
 import java.time.LocalDateTime
 import java.util.*
 
-data class Item(val id: UUID, val type: ItemType, val properties: String, val created: LocalDateTime)
+data class Item(val id: UUID, val type: ItemType, val properties: String)
 
 enum class ItemType {
     USER,
